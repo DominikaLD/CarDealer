@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samochody</title>
+    <script src="cars-page.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="menu_screen container" id="nav_menu">
+      <div class="video_nav">
+        <div class="video">
+          <video
+            class="car_video"
+            src="./img/car.mp4"
+            autoplay
+            muted
+            loop
+            width="100%"
+            height="300"
+          ></video>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="index1.html">Strona głowna</a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    id="production_year"
+                    href="#"
+                    >Najnowsze modele</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Wyszukaj markę"
+                  aria-label="Search"
+                  id="search_brand"
+                />
+                <button
+                  class="btn btn-outline-success"
+                  type="button"
+                  id="search_button"
+                >
+                  Szukaj
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="main_container" id="main_container"></div>
+    <div class="main_form" id="main_form">
+      <div class="card card_main">
+        <div class="topside">
+          <img class="product" id="photoCar" alt="Car" />
+        </div>
+        <div class="bootomside">
+          <form class="action" action="javascript:void(0);" onsubmit="buyCar()">
+            <div class="carInfo" id="carInfo">
+              <p id="carName"></p>
+              <p id="carPrice"></p>
+              <p>Imię i nazwisko</p>
+              <input
+                id="name_input"
+                type="text"
+                class="inputbox"
+                name="name"
+                required
+              />
+              <p>Miejsce odbioru</p>
+            </div>
+            <input
+              type="text"
+              class="inputbox"
+              name="adress"
+              id="adress"
+              required
+            />
+
+            <p>Metoda płatności</p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Wybierz metodę zakupu--</option>
+              <option value="Visa">Karta</option>
+              <option value="RuPay">Leasing</option>
+              <option value="MasterCard">Gotówka</option>
+            </select>
+            <div class="expcvv">
+              <p class="expcvv_text">Data odbioru</p>
+              <input
+                type="date"
+                class="inputbox"
+                name="exp_date"
+                id="date"
+                required
+              />
+            </div>
+            <div class="expcvv" id="accesories">
+              <p class="expcvv_text2">Wybierz akcesoria</p>
+            </div>
+
+            <button type="submit" class="button" id="buy_car">Zakup</button>
+            <button type="button" class="button" id="backToMainPage">
+              Powrót do strony głównej
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="buycar_page" id="buycar_page">
+      <div id="carBought_main">
+        <p class="carBoughtName" id="carBoughtName"></p>
+        <p class="carBoughtName" id="carBoughtDate"></p>
+        <p class="carBoughtName" id="carBoughtPrice"></p>
+        <img class="imgBoughtCar" id="carBoughtPhoto" />
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="footer_main">
+        <h1 class="paragraph1">Dominika Lisiewicz-Danielak</h1>
+      </div>
+    </footer>
+  </body>
+</html>

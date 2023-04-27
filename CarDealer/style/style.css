@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,700&family=Manrope:wght@500&family=Special+Elite&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+.car_video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.4);
+  display: block;
+  z-index: -1;
+}
+
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 30vh auto;
+  justify-content: center;
+  gap: 2%;
+  width: 90%;
+}
+.car_article {
+  border: solid 2px gray;
+  text-align: center;
+  margin-top: 10%;
+  border-radius: 10px;
+  max-width: 500px;
+}
+.car_photo {
+  width: 480px;
+  height: 300px;
+}
+.footer_main {
+  background-color: rgba(0, 0, 0, 0.783);
+  width: 100%;
+  height: 4%;
+  text-align: center;
+  color: ghostwhite;
+  flex-direction: column-reverse;
+  display: block;
+}
+.paragraph1 {
+  font-size: 1.5em;
+}
+.hide {
+  visibility: hidden;
+}
+.car_number2 {
+  width: auto;
+  height: 100vh;
+}
+/* .mainscreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+.main_form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  min-height: 100px;
+  background-color: #dfdbe5;
+  background: url("https://images.pexels.com/photos/1197095/pexels-photo-1197095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  color: #963e7b;
+}
+
+.main_form .card_main {
+  flex: 0 0 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  margin: 0;
+  padding: 0;
+  background: white;
+  position: center;
+  align-self: center;
+  box-shadow: 4px 3px 20px #3535358c;
+  --bs-card-border-width: 0;
+}
+
+.topside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 0%;
+}
+
+.product {
+  object-fit: scale-down;
+  width: 100%;
+}
+
+.bottomside {
+  display: flex;
+  position: absolute;
+  padding: 10%;
+  background-color: #ffffff;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  justify-content: center;
+}
+.action {
+  justify-content: center;
+  position: relative;
+  margin: 10%;
+}
+#carName {
+  font-size: 3rem;
+  text-align: center;
+}
+#carPrice {
+  font-size: 1.8rem;
+  text-align: center;
+}
+p {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0.8rem 0;
+}
+
+.inputbox {
+  color: #030303;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1.5px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  color: #615a5a;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.expcvv {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+}
+
+.expcvv_text {
+  padding-right: 1rem;
+}
+.expcvv_text2 {
+  padding: 0 1rem;
+}
+
+.button {
+  background: linear-gradient(135deg, #753370 0%, #298096 100%);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width: 100%;
+  letter-spacing: 0.11rem;
+  outline: none;
+}
+
+.button:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 3px 3px 6px #38373785;
+}
+.buycar_page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 30vh auto;
+  text-align: center;
+  justify-content: center;
+  gap: 2%;
+  width: 90%;
+}
+.imgBoughtCar {
+  object-fit: scale-down;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 25%;
+  margin-top: 2%;
+}
+.carBoughtName {
+  font-size: 50px;
+}
+.is-hidden {
+  display: none;
+}
+.accesories_list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
